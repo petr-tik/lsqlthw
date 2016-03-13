@@ -1,0 +1,8 @@
+In these tables I made a 3rd relation table to link them. How would you get rid of this relation table person_pet and put that information right into person? What's the implication of this change?
+SQL tables cannot hold composite data structures like lists and dicts, if pet becomes a column of person table, each person can only have 1 pet
+
+
+If you can put one row into person_pet, can you put more than one? How would you record a crazy cat lady with 50 cats?
+Yes, you keep adding rows with the crazy lady person id and all her cats' IDs one by one
+Create another table for the cars people might own, and create its corresponding relation table.
+Search for "sqlite3 datatypes" in your favorite search engine and go read the "Datatypes In SQLite Version 3" document. Take notes on what types you can use and other things that seem important. We'll cover more later.
